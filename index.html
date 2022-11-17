@@ -112,7 +112,63 @@
             color: saddlebrown;
             font-size: 40px;
         }
-
+        .box8::before {
+            content: "The before content";
+            color: red;
+        }
+        .box8::after {
+            content: "The after content";
+            color: green;
+        }
+        .box9 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+        .box10 {
+            margin-top: 20px;
+            padding: 30px;
+            height: 400px;
+            border: 2px solid black;
+            position: relative;
+        }
+        .box11, 
+        .box12 {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+        }
+        .box12 {
+            background-color: rgb(120, 247, 236);
+            width: 300px;
+            height: 25px;
+            z-index: -1;
+        }
+        .box10::before {
+            background-image: url(https://i.pinimg.com/originals/e6/99/fb/e699fb7cd6ce72d00445fac66fdfc997.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            opacity: 0.5;
+        }
+        .box10::after {
+            background-image: url(https://i.pinimg.com/originals/e6/99/fb/e699fb7cd6ce72d00445fac66fdfc997.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            content: "";
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            bottom: 0px;
+           right: 0px;
+        }
     </style>
 </head>
 
@@ -152,5 +208,23 @@
         <li>4th Child</li>
         <li>5th Child</li>
     </ul>
+
+    <div class="box8">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, aliquid.
+    </div>
+
+    <div class="box9">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, animi.
+    </div>
+
+    <div class="box10">
+        <div class="box11">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, voluptate.
+        </div>
+        <div class="box12">
+          
+        </div>
+    </div>
+
 </body>
 </html>
